@@ -21,7 +21,6 @@ public class Cinema {
         movies.add(new Movie(name, fsk, price, genre, length));
     }
 
-
     public ArrayList<Presentation> getPresentationsFromMovie(int movieIdx){
         Movie movie = movies.get(movieIdx);
         ArrayList<Presentation> presentations = new ArrayList<>();
@@ -32,7 +31,6 @@ public class Cinema {
         }
         return presentations;
     }
-
 
     public ArrayList<Room> getRooms() {
         return rooms;

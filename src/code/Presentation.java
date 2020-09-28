@@ -3,6 +3,7 @@ package code;
 import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
 
 public class Presentation {
     Movie movie;
@@ -37,5 +38,15 @@ public class Presentation {
 
     public ArrayList<String> getSeats() {
         return seats;
+    }
+  
+    public void setSeats(ArrayList<String> seats) {
+        this.seats = seats;
+    }
+
+    public void reserveSeats(HashSet<Integer> seatIDs) {
+        for (int seatID : seatIDs) {
+            seats.set(seatID, "XX");
+        }
     }
 }

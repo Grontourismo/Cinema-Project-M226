@@ -36,6 +36,10 @@ public class Room {
         return rows;
     }
 
+    public ArrayList<String> getSeats() {
+        return seats;
+    }
+
     public int getSeatsPerRow() {
         return seatsPerRow;
     }
