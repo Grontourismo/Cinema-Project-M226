@@ -9,18 +9,17 @@ public class Cinema {
     private ArrayList<Presentation> presentations = new ArrayList<>();
     private ArrayList<Movie> movies = new ArrayList<>();
 
-    public void newRoom(String name, int rows, int seatsPerRow){
+    public void newRoom(String name, int rows, int seatsPerRow) {
 
     }
 
-    public void newPresentation(Movie movie, Date date, Time time, Room room){
+    public void newPresentation(Movie movie, Date date, Time time, Room room) {
 
     }
 
-    public void newMovie(String name, int fsk, double price, String genre, int length){
+    public void newMovie(String name, int fsk, double price, String genre, int length) {
 
     }
-
 
     public ArrayList<Room> getRooms() {
         return rooms;
