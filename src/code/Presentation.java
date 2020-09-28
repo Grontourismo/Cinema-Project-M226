@@ -17,6 +17,7 @@ public class Presentation {
         this.date = date;
         this.time = time;
         this.room = room;
+        this.seats = room.getSeats();
     }
 
     public Movie getMovie() {
@@ -38,7 +39,7 @@ public class Presentation {
     public ArrayList<String> getSeats() {
         return seats;
     }
-
+  
     public void setSeats(ArrayList<String> seats) {
         this.seats = seats;
     }

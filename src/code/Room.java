@@ -12,7 +12,20 @@ public class Room {
         this.name = name;
         this.rows = rows;
         this.seatsPerRow = seatsPerRow;
-        //test
+        this.generateSeats(rows, seatsPerRow);
+    }
+
+    public void generateSeats(int rows, int seatsPerRow){
+        ArrayList<Character> alphabet = new ArrayList<>();
+        for(char c = 'A'; c <= 'Z'; ++c) {
+            alphabet.add(c);
+        }
+
+        for (int i = 0; i < rows; i++){
+            for (int j = 1; j < seatsPerRow; j++){
+                seats.add(alphabet.get(i) + "" + j);
+            }
+        }
     }
 
     public String getName() {
@@ -31,5 +44,7 @@ public class Room {
         return seatsPerRow;
     }
 
-
+    public ArrayList<String> getSeats() {
+        return seats;
+    }
 }
