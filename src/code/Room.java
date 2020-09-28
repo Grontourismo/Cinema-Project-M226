@@ -9,6 +9,7 @@ public class Room {
         this.name = name;
         this.rows = rows;
         this.seatsPerRow = seatsPerRow;
+        //test
     }
 
     public String getName() {
