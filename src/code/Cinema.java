@@ -10,15 +10,27 @@ public class Cinema {
     private ArrayList<Movie> movies = new ArrayList<>();
 
     public void newRoom(String name, int rows, int seatsPerRow){
-
+        rooms.add(new Room(name, rows, seatsPerRow));
     }
 
-    public void newPresentation(Movie movie, Date date, Time time, Room room){
-
+    public void newPresentation(int movie, Date date, Time time, int room){
+        presentations.add(new Presentation(movies.get(movie), date, time, rooms.get(room)));
     }
 
     public void newMovie(String name, int fsk, double price, String genre, int length){
+        movies.add(new Movie(name, fsk, price, genre, length));
+    }
 
+
+    public ArrayList<Presentation> getPresentationsFromMovie(int movieIdx){
+        Movie movie = movies.get(movieIdx);
+        ArrayList<Presentation> presentations = new ArrayList<>();
+        for (Presentation presentation : this.presentations){
+            if (presentation.getMovie() == movie){
+                presentations.add(presentation);
+            }
+        }
+        return presentations;
     }
 
 
