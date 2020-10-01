@@ -1,4 +1,4 @@
-package code;
+package ch.vino.cinema.code;
 
 import java.sql.Time;
 import java.util.ArrayList;

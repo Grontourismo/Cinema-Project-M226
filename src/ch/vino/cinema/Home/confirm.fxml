@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="133.0" prefWidth="243.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.vino.cinema.Home.ConfirmController">
+   <children>
+      <Button onAction="#cancel" layoutX="14.0" layoutY="94.0" mnemonicParsing="false" text="Abbrechen" />
+      <Button onAction="#delete" layoutX="177.0" layoutY="94.0" mnemonicParsing="false" text="Löschen" />
+      <Label layoutX="13.0" layoutY="34.0" prefHeight="46.0" prefWidth="217.0" text="Sind sie sicher?" />
+   </children>
+</AnchorPane>

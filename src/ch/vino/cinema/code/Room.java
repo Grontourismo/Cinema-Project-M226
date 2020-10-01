@@ -1,4 +1,4 @@
-package code;
+package ch.vino.cinema.code;
 
 import java.util.ArrayList;
 
@@ -42,9 +42,5 @@ public class Room {
 
     public int getSeatsPerRow() {
         return seatsPerRow;
-    }
-
-    public ArrayList<String> getSeats() {
-        return seats;
     }
 }

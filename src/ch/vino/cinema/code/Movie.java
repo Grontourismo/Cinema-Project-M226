@@ -1,4 +1,4 @@
-package code;
+package ch.vino.cinema.code;
 
 public class Movie {
     private String name;

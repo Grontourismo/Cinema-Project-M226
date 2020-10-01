@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="35.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.vino.cinema.prefaps.FilmsController">
+   <Label fx:id="label" layoutX="14.0" layoutY="5.0" prefHeight="26.0" prefWidth="239.0"/>
+   <Button onAction="#showPushed" fx:id="show" layoutX="270.0" layoutY="6.0" mnemonicParsing="false" text="Show"/>
+   <Button onAction="#deletePushed" fx:id="delete" layoutX="322.0" layoutY="6.0" mnemonicParsing="false" text="Delete"/>
+</AnchorPane>
