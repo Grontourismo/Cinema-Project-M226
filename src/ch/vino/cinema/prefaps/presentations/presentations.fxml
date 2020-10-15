@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="155.0" prefWidth="180.67" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ch.vino.cinema.prefaps.presentations.PresentationsController">
+   <Pane fx:id="pane" layoutX="5.0" layoutY="5.0" prefHeight="146.0" prefWidth="172.0">
+      <Label fx:id="dateTime" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="140.0"/>
+      <Label fx:id="room" layoutX="16.0" layoutY="46.0" prefHeight="27.0" prefWidth="140.0"/>
+      <Label fx:id="freePlaces" layoutX="14.0" layoutY="73.0" prefHeight="27.0" prefWidth="140.0"/>
+      <Button layoutX="14.0" layoutY="107.0" mnemonicParsing="false" onAction="#reserve" text="Reservieren"/>
+      <Button layoutX="106.0" layoutY="107.0" mnemonicParsing="false" text="Löschen" onAction="#delete"/>
+   </Pane>
+</AnchorPane>

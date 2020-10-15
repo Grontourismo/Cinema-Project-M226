@@ -1,4 +1,4 @@
-package ch.vino.cinema.prefaps;
+package ch.vino.cinema.prefaps.films;
 
 import ch.vino.cinema.Home.ConfirmController;
 import ch.vino.cinema.Home.HomeController;
@@ -9,23 +9,30 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class FilmsController {
+    public Pane pane;
+    public Label label2;
     private Movie movie;
     public Label label;
     public Button show;
     public Button delete;
 
     public void init(Movie movie){
+        pane.setStyle("-fx-border-color: black");
         this.label.setText(movie.getName());
+        this.label2.setText(movie.getFilmDescription());
         this.movie = movie;
     }
 
-    public void showPushed(){
-
+    public void showPushed() throws IOException {
+        Main.getInstance().showFilm(movie);
     }
 
     public void deletePushed() throws IOException {

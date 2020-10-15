@@ -6,29 +6,38 @@ import java.util.Date;
 import java.util.HashSet;
 
 public class Presentation {
-    Movie movie;
-    Date date;
-    Time time;
-    Room room;
-    private ArrayList<String> seats = new ArrayList<>();
+    private Movie movie;
+    private String date;
+    private String time;
+    private Room room;
+    private ArrayList<String> seats;
+    private int freePlaces;
 
-    public Presentation(Movie movie, Date date, Time time, Room room) {
+    public Presentation(Movie movie, String date, String time, Room room) {
         this.movie = movie;
         this.date = date;
         this.time = time;
         this.room = room;
         this.seats = room.getSeats();
+        this.freePlaces = seats.size();
+    }
+
+    public void reserveSeats(HashSet<Integer> seatIDs) {
+        for (int seatID : seatIDs) {
+            seats.set(seatID, "XX");
+            freePlaces--;
+        }
     }
 
     public Movie getMovie() {
         return movie;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public Time getTime() {
+    public String getTime() {
         return time;
     }
 
@@ -39,14 +48,8 @@ public class Presentation {
     public ArrayList<String> getSeats() {
         return seats;
     }
-  
-    public void setSeats(ArrayList<String> seats) {
-        this.seats = seats;
-    }
 
-    public void reserveSeats(HashSet<Integer> seatIDs) {
-        for (int seatID : seatIDs) {
-            seats.set(seatID, "XX");
-        }
+    public int getFreePlaces() {
+        return freePlaces;
     }
 }

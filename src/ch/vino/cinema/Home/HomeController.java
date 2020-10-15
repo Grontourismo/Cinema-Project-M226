@@ -2,7 +2,7 @@ package ch.vino.cinema.Home;
 
 import ch.vino.cinema.Main;
 import ch.vino.cinema.code.Movie;
-import ch.vino.cinema.prefaps.FilmsController;
+import ch.vino.cinema.prefaps.films.FilmsController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.VBox;

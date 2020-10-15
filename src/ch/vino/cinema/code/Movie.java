@@ -15,6 +15,10 @@ public class Movie {
         this.length = length;
     }
 
+    public String getFilmDescription(){
+        return genre + " | " + fsk + " | " + length;
+    }
+
     public String getName() {
         return name;
     }

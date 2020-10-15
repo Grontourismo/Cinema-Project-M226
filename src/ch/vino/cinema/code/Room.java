@@ -22,7 +22,7 @@ public class Room {
         }
 
         for (int i = 0; i < rows; i++){
-            for (int j = 1; j < seatsPerRow; j++){
+            for (int j = 1; j <= seatsPerRow; j++){
                 seats.add(alphabet.get(i) + "" + j);
             }
         }
