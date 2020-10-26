@@ -3,12 +3,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.vino.cinema.showFilm.ShowFilmController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.vino.cinema.showFilm.ShowFilmController">
     <children>
         <ScrollPane layoutX="14.0" layoutY="14.0" prefHeight="320.0" prefWidth="558.0">
-            <VBox layoutX="14.0" layoutY="14.0" prefHeight="320.0" prefWidth="542.01" fx:id="vbox"/>
+            <VBox fx:id="vbox" layoutX="14.0" layoutY="14.0" prefHeight="320.0" prefWidth="542.01" />
         </ScrollPane>
-        <Button layoutX="14.0" layoutY="357.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="101.0" text="Zurück"/>
-        <Button layoutX="385.0" layoutY="357.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" text="Presentation erstellen"/>
+        <Button layoutX="14.0" layoutY="357.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="101.0" text="Back" />
+        <Button layoutX="385.0" layoutY="357.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" text="add Presentation" />
     </children>
 </AnchorPane>

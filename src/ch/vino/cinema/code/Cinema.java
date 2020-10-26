@@ -5,6 +5,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
 
 public class Cinema {
     private ArrayList<Room> rooms = new ArrayList<>();
@@ -59,6 +60,16 @@ public class Cinema {
             }
         }
         return presentations;
+    }
+
+    public void addReservation(HashSet<Integer> seatIdx, Presentation presentation){
+        int nr = 0;
+        for (Presentation presentation1 : this.presentations){
+            if (presentation1 == presentation){
+                presentations.get(nr).reserveSeats(seatIdx);
+            }
+            nr++;
+        }
     }
 
     public ArrayList<Room> getRooms() {

@@ -37,8 +37,8 @@ public class PresentationsController {
         this.freePlaces.setText(presentation.getFreePlaces() + "");
     }
 
-    public void reserve() {
-        Main.getInstance().showPresentation(presentation);
+    public void reserve() throws IOException {
+        Main.getInstance().showPresentation(presentation, movie);
     }
 
     public void delete() throws IOException {

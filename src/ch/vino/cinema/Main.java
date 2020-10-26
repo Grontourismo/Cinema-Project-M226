@@ -4,6 +4,7 @@ import ch.vino.cinema.Home.HomeController;
 import ch.vino.cinema.code.Cinema;
 import ch.vino.cinema.code.Movie;
 import ch.vino.cinema.code.Presentation;
+import ch.vino.cinema.reserve.ReserveController;
 import ch.vino.cinema.showFilm.ShowFilmController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -41,8 +42,14 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-    public void showPresentation(Presentation presentation){
-
+    public void showPresentation(Presentation presentation, Movie movie) throws IOException {
+        FXMLLoader loader = new FXMLLoader(ReserveController.class.getResource("reserve.fxml"));
+        Parent root = loader.load();
+        ReserveController controller = loader.getController();
+        controller.init(presentation, movie);
+        primaryStage.setTitle(presentation.getDate() + " | " + presentation.getTime());
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
     }
 
 
