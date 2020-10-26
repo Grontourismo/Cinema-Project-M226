@@ -1,10 +1,11 @@
-package ch.vino.cinema.prefaps.films;
+package ch.vino.cinema.prefaps.rooms;
 
 import ch.vino.cinema.Home.ConfirmController;
 import ch.vino.cinema.Home.HomeController;
 import ch.vino.cinema.Main;
 import ch.vino.cinema.addPresentation.AddPresentationController;
 import ch.vino.cinema.code.Movie;
+import ch.vino.cinema.code.Room;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -18,34 +19,18 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class FilmsController {
+public class RoomController {
     public Pane pane;
     public Label label2;
-    public Movie movie;
+    public Room room;
     public Label label;
-    public Button show;
-    public Button delete;
     public boolean isChoosen;
 
-    public void init(Movie movie){
+    public void init(Room room){
         pane.setStyle("-fx-border-color: black");
-        this.label.setText(movie.getName());
-        this.label2.setText(movie.getFilmDescription());
-        this.movie = movie;
-    }
-
-    public void showPushed() throws IOException {
-        Main.getInstance().showFilm(movie);
-    }
-
-    public void deletePushed() throws IOException {
-        FXMLLoader loader = new FXMLLoader(ConfirmController.class.getResource("confirm.fxml"));
-        Parent root = loader.load();
-        Stage primaryStage = new Stage();
-        primaryStage.setTitle("confirm");
-        primaryStage.setScene(new Scene(root));
-        ((ConfirmController)  loader.getController()).init(movie, primaryStage);
-        primaryStage.show();
+        this.label.setText(room.getName());
+        this.label2.setText("Rows: " + room.getRows() + " | Seats per row: " + room.getSeatsPerRow());
+        this.room = room;
     }
 
     public void choose() {
@@ -53,7 +38,7 @@ public class FilmsController {
             isChoosen = false;
             pane.setStyle("-fx-border-color: black");
         }else {
-            for (FilmsController controller : AddPresentationController.movieControllers) {
+            for (RoomController controller : AddPresentationController.roomControllers) {
                 if (controller.isChoosen) {
                     return;
                 }

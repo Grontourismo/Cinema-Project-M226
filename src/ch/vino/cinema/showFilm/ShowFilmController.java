@@ -49,4 +49,8 @@ public class ShowFilmController {
     public void back() throws IOException {
         Main.getInstance().showHome();
     }
+
+    public void addPresentation() throws IOException {
+        Main.getInstance().showAddPresentation();
+    }
 }

@@ -1,6 +1,7 @@
 package ch.vino.cinema;
 
 import ch.vino.cinema.Home.HomeController;
+import ch.vino.cinema.addPresentation.AddPresentationController;
 import ch.vino.cinema.code.Cinema;
 import ch.vino.cinema.code.Movie;
 import ch.vino.cinema.code.Presentation;
@@ -83,6 +84,17 @@ public class Main extends Application {
         ReserveController controller = loader.getController();
         controller.init(presentation, movie);
         primaryStage.setTitle(presentation.getDate() + " | " + presentation.getTime());
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+    public void showAddPresentation() throws IOException {
+        FXMLLoader loader = new FXMLLoader(AddPresentationController.class.getResource("addPresentation.fxml"));
+        Parent root = loader.load();
+        AddPresentationController controller = loader.getController();
+        Stage primaryStage = new Stage();
+        controller.init(primaryStage);
+        primaryStage.setTitle("Add Presentation");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

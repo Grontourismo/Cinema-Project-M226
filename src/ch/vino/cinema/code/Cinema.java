@@ -28,8 +28,8 @@ public class Cinema {
         this.rooms.remove(room);
     }
 
-    public void newPresentation(int movie, String date, String time, int room){
-        presentations.add(new Presentation(movies.get(movie), date, time, rooms.get(room)));
+    public void newPresentation(Movie movie, String date, String time, Room room){
+        presentations.add(new Presentation(movie, date, time, room));
     }
 
     public void removePresentation(Presentation presentation){

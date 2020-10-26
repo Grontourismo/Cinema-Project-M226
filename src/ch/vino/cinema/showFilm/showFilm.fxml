@@ -9,6 +9,6 @@
             <VBox fx:id="vbox" layoutX="14.0" layoutY="14.0" prefHeight="320.0" prefWidth="542.01" />
         </ScrollPane>
         <Button onAction="#back" layoutX="14.0" layoutY="357.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="101.0" text="Back" />
-        <Button layoutX="385.0" layoutY="357.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" text="add Presentation" />
+        <Button onAction="#addPresentation" layoutX="385.0" layoutY="357.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" text="add Presentation" />
     </children>
 </AnchorPane>
