@@ -5,6 +5,7 @@ import ch.vino.cinema.code.Movie;
 import ch.vino.cinema.code.Presentation;
 import ch.vino.cinema.prefaps.presentations.PresentationsController;
 import ch.vino.cinema.prefaps.reserve.SeatController;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.HBox;
@@ -56,6 +57,10 @@ public class ReserveController {
             nr++;
         }
         Main.getCinema().addReservation(seatIdx, presentation);
+        Main.getInstance().showFilm(movie);
+    }
+
+    public void back() throws IOException {
         Main.getInstance().showFilm(movie);
     }
 }

@@ -11,7 +11,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
+import org.json.simple.JSONArray;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
+import java.io.FileReader;
 import java.io.IOException;
 
 public class Main extends Application {
@@ -21,7 +26,38 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+        load();
         Main.primaryStage = primaryStage;
+        showHome();
+        primaryStage.setOnCloseRequest((WindowEvent event1) -> {
+            cinema.save(cinema.toJsonRoom(), cinema.toJsonMovie(), cinema.toJsonPresentation());
+        });
+    }
+
+    public void load() {
+        try {
+            JSONParser parser = new JSONParser();
+
+            FileReader readerRoom = new FileReader("src/ch/vino/cinema/data/rooms.json");
+            JSONArray rooms = (JSONArray) parser.parse(readerRoom);
+
+            FileReader readerFilm = new FileReader("src/ch/vino/cinema/data/films.json");
+            JSONArray films = (JSONArray) parser.parse(readerFilm);
+
+            FileReader readerPresentation = new FileReader("src/ch/vino/cinema/data/presentations.json");
+            JSONArray presentations = (JSONArray) parser.parse(readerPresentation);
+
+
+            cinema.fromJSON(rooms, films, presentations);
+        } catch (IOException e) {
+            System.out.println("I/O Error");
+        } catch (ParseException e) {
+            System.out.println("Parse Error");
+        }
+    }
+
+
+    public void showHome() throws IOException {
         FXMLLoader loader = new FXMLLoader(HomeController.class.getResource("home.fxml"));
         Parent root = loader.load();
         HomeController controller = loader.getController();
@@ -30,7 +66,6 @@ public class Main extends Application {
         Main.primaryStage.setScene(new Scene(root));
         Main.primaryStage.show();
     }
-
 
     public void showFilm(Movie movie) throws IOException {
         FXMLLoader loader = new FXMLLoader(ShowFilmController.class.getResource("showFilm.fxml"));
@@ -57,8 +92,11 @@ public class Main extends Application {
         return cinema;
     }
 
+    public static Stage getPrimaryStage() {
+        return primaryStage;
+    }
+
     public static void main(String[] args) {
-        cinema.autoMovies();
         launch(args);
     }
 
