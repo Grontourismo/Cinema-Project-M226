@@ -19,22 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5848637c-9d90-48df-a809-56bef999bade" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Cinema-Project-M226.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Cinema-Project-M226.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5848637c-9d90-48df-a809-56bef999bade" name="Default Changelist" comment="reserveSeats">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/Home/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/Home/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/code/Cinema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/code/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/code/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/code/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema-Project-M226/ch/vino/cinema/code/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema-Project-M226/ch/vino/cinema/code/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/Home/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/Home/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/Home/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/Home/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/data/films.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/data/films.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/prefaps/rooms/RoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/prefaps/rooms/RoomController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <favorite-branches>
@@ -52,7 +58,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Vincent" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,25 +72,35 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../.." />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\M0544739\IdeaProjects\Cinema-FXProject-M226\src\ch\vino\cinema\prefaps\films" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="13" />
       <option name="MAIN_CLASS_NAME" value="ch.vino.cinema.Main" />
       <module name="Cinema-Project-M226" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;${PATH_TO_FX}&quot; --add-modules=javafx.controls,javafx.fxml,javafx.graphics" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Vincent\Desktop\ZLI\Progammieren I\Java\Libraries\JAVAFX\openjfx-11.0.2_windows-x64_bin-sdk\javafx-sdk-11.0.2\lib&quot; --add-modules=javafx.controls,javafx.fxml,javafx.graphics" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ch.vino.cinema.*" />
@@ -101,23 +117,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -129,6 +148,13 @@
       <option name="presentableId" value="Default" />
       <updated>1601282102091</updated>
       <workItem from="1601282103530" duration="3262000" />
+      <workItem from="1601626214746" duration="1872000" />
+      <workItem from="1602499073648" duration="3206000" />
+      <workItem from="1602508595329" duration="609000" />
+      <workItem from="1602576080926" duration="10515000" />
+      <workItem from="1603695961162" duration="10045000" />
+      <workItem from="1603730498597" duration="3165000" />
+      <workItem from="1603822467997" duration="2164000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1601282586423</created>
@@ -151,7 +177,28 @@
       <option name="project" value="LOCAL" />
       <updated>1601284973416</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="reserveSeats">
+      <created>1603702656602</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603702656603</updated>
+    </task>
+    <task id="LOCAL-00005" summary="reserveSeats">
+      <created>1603702880589</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603702880589</updated>
+    </task>
+    <task id="LOCAL-00006" summary="-">
+      <created>1603734243325</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603734243325</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,37 +209,44 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
     <MESSAGE value="reserveSeats" />
-    <option name="LAST_COMMIT_MESSAGE" value="reserveSeats" />
+    <MESSAGE value="-" />
+    <option name="LAST_COMMIT_MESSAGE" value="-" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Notifications" timestamp="1601282914297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1601282914297" />
-    <state x="440" y="94" key="#Project_Structure" timestamp="1601543543028">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="352" y="74" key="#Project_Structure" timestamp="1603703858491">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601543543028" />
-    <state x="279" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601544899570">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="352" y="74" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1603703858491" />
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602576753585" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603706996911">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601285367742" />
-    <state x="279" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601544899570" />
-    <state x="718" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1601543590848">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603706996911" />
+    <state x="279" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602576763842" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1603704298629">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601284422909" />
-    <state x="718" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601543590848" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1603704298629" />
+    <state x="718" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602590209312" />
+    <state x="499" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603706920766">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1603706920766" />
     <state x="400" y="101" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1601283584350">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -201,58 +255,68 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="618" y="301" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1601282163793" />
-    <state x="342" y="5" key="CommitChangelistDialog2" timestamp="1601285472660">
+    <state x="342" y="5" key="CommitChangelistDialog2" timestamp="1603734242358">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="342" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601285472660" />
-    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1601544757014">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="342" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603734242358" />
+    <state x="533" y="207" key="FileChooserDialogImpl" timestamp="1603706882076">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="533" y="207" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603706882076" />
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601544757014" />
-    <state width="1877" height="303" key="GridCell.Tab.0.bottom" timestamp="1601550119976">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601550119976" />
-    <state width="1877" height="303" key="GridCell.Tab.0.center" timestamp="1601550119975">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601550119975" />
-    <state width="1877" height="303" key="GridCell.Tab.0.left" timestamp="1601550119975">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601550119975" />
-    <state width="1877" height="303" key="GridCell.Tab.0.right" timestamp="1601550119975">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="303" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601550119975" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1601550014561">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601550014561" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1601550014560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601550014560" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1601550014560">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601550014560" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1601550014561">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601550014561" />
-    <state x="311" y="0" key="SettingsEditor" timestamp="1601544799266">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601282199278" />
-    <state x="311" y="0" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601544799266" />
-    <state x="361" y="134" key="Vcs.Push.Dialog.v2" timestamp="1601283072005">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1603824585611">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601283072005" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603824585611" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373178" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1603824585611">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603824585611" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373177" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1603824585611">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603824585611" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373177" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1603824585611">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603824585611" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373177" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1602597373178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373178" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1602597373178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373178" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1602597373178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373178" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1602597373178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373178" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1603706985487">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603706985487" />
+    <state x="311" y="0" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601544799266" />
+    <state x="361" y="134" key="Vcs.Push.Dialog.v2" timestamp="1603734253439">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603734253439" />
+    <state x="451" y="169" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601550489770" />
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601283081111">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601283081111" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1602501521966">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602501521966" />
   </component>
 </project>

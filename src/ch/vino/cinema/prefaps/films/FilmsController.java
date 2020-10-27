@@ -1,31 +1,41 @@
-package ch.vino.cinema.prefaps;
+package ch.vino.cinema.prefaps.films;
 
 import ch.vino.cinema.Home.ConfirmController;
 import ch.vino.cinema.Home.HomeController;
 import ch.vino.cinema.Main;
+import ch.vino.cinema.addPresentation.AddPresentationController;
 import ch.vino.cinema.code.Movie;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class FilmsController {
-    private Movie movie;
+    public Pane pane;
+    public Label label2;
+    public Movie movie;
     public Label label;
     public Button show;
     public Button delete;
+    public boolean isChoosen;
 
     public void init(Movie movie){
+        pane.setStyle("-fx-border-color: black");
         this.label.setText(movie.getName());
+        this.label2.setText(movie.getFilmDescription());
         this.movie = movie;
     }
 
-    public void showPushed(){
-
+    public void showPushed() throws IOException {
+        Main.getInstance().showFilm(movie);
     }
 
     public void deletePushed() throws IOException {
@@ -36,5 +46,20 @@ public class FilmsController {
         primaryStage.setScene(new Scene(root));
         ((ConfirmController)  loader.getController()).init(movie, primaryStage);
         primaryStage.show();
+    }
+
+    public void choose() {
+        if (isChoosen){
+            isChoosen = false;
+            pane.setStyle("-fx-border-color: black");
+        }else {
+            for (FilmsController controller : AddPresentationController.movieControllers) {
+                if (controller.isChoosen) {
+                    return;
+                }
+            }
+            this.pane.setStyle("-fx-background-color: #c9c6c3;-fx-border-color: black");
+            isChoosen = true;
+        }
     }
 }
