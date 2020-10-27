@@ -3,6 +3,7 @@ package ch.vino.cinema.Home;
 import ch.vino.cinema.Main;
 import ch.vino.cinema.code.Movie;
 import ch.vino.cinema.prefaps.films.FilmsController;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.VBox;
@@ -30,5 +31,17 @@ public class HomeController {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void addRoom() throws IOException {
+        Main.getInstance().showAddRoom();
+    }
+
+    public void deleteRoom() throws IOException {
+        Main.getInstance().showDeleteRoom();
+    }
+
+    public void addFilm() throws IOException {
+        Main.getInstance().showAddFilm();
     }
 }

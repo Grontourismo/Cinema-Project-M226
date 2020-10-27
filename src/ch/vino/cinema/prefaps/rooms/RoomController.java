@@ -6,6 +6,7 @@ import ch.vino.cinema.Main;
 import ch.vino.cinema.addPresentation.AddPresentationController;
 import ch.vino.cinema.code.Movie;
 import ch.vino.cinema.code.Room;
+import ch.vino.cinema.deleteRoom.DeleteRoomController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -46,5 +47,10 @@ public class RoomController {
             this.pane.setStyle("-fx-background-color: #c9c6c3;-fx-border-color: black");
             isChoosen = true;
         }
+    }
+
+    public void delete() {
+        Main.getCinema().removeRoom(this.room);
+        DeleteRoomController.instance.init();
     }
 }

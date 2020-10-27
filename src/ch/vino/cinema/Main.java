@@ -1,10 +1,13 @@
 package ch.vino.cinema;
 
 import ch.vino.cinema.Home.HomeController;
+import ch.vino.cinema.addFilm.AddFilmController;
 import ch.vino.cinema.addPresentation.AddPresentationController;
+import ch.vino.cinema.addRoom.AddRoomController;
 import ch.vino.cinema.code.Cinema;
 import ch.vino.cinema.code.Movie;
 import ch.vino.cinema.code.Presentation;
+import ch.vino.cinema.deleteRoom.DeleteRoomController;
 import ch.vino.cinema.reserve.ReserveController;
 import ch.vino.cinema.showFilm.ShowFilmController;
 import javafx.application.Application;
@@ -95,6 +98,39 @@ public class Main extends Application {
         Stage primaryStage = new Stage();
         controller.init(primaryStage);
         primaryStage.setTitle("Add Presentation");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+    public void showAddRoom() throws IOException {
+        FXMLLoader loader = new FXMLLoader(AddRoomController.class.getResource("addRoom.fxml"));
+        Parent root = loader.load();
+        AddRoomController controller = loader.getController();
+        Stage primaryStage = new Stage();
+        controller.init(primaryStage);
+        primaryStage.setTitle("Add Room");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+    public void showDeleteRoom() throws IOException {
+        FXMLLoader loader = new FXMLLoader(DeleteRoomController.class.getResource("deleteRoom.fxml"));
+        Parent root = loader.load();
+        DeleteRoomController controller = loader.getController();
+        Stage primaryStage = new Stage();
+        controller.init();
+        primaryStage.setTitle("Delete Room");
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
+
+    public void showAddFilm() throws IOException {
+        FXMLLoader loader = new FXMLLoader(AddFilmController.class.getResource("addFilm.fxml"));
+        Parent root = loader.load();
+        AddFilmController controller = loader.getController();
+        Stage primaryStage = new Stage();
+        controller.init(primaryStage);
+        primaryStage.setTitle("Add Film");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
