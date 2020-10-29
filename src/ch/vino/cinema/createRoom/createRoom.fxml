@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="268.0" prefWidth="306.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.vino.cinema.createRoom.CreateRoomController">
+    <children>
+        <TextField fx:id="roomName" layoutX="135.0" layoutY="64.0" />
+        <Label layoutX="17.0" layoutY="64.0" prefHeight="26.0" prefWidth="67.0" text="Room name" />
+        <Label layoutX="17.0" layoutY="117.0" text="Number of rows" />
+        <Label layoutX="17.0" layoutY="167.0" text="Seats per row" />
+        <Button fx:id="submit" layoutX="230.0" layoutY="220.0" mnemonicParsing="false" onAction="#submitPushed" text="Submit" />
+        <TextField fx:id="numberOfRows" layoutX="135.0" layoutY="113.0" />
+        <TextField fx:id="seatsPerRow" layoutX="135.0" layoutY="163.0" />
+    </children>
+</AnchorPane>

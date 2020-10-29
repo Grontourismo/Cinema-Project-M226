@@ -8,7 +8,7 @@
         <ScrollPane layoutX="14.0" layoutY="14.0" prefHeight="320.0" prefWidth="558.0">
             <VBox layoutX="14.0" layoutY="14.0" prefHeight="320.0" prefWidth="542.01" fx:id="vbox"/>
         </ScrollPane>
-        <Button layoutX="14.0" layoutY="357.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="101.0" text="Zurück"/>
+        <Button layoutX="14.0" onAction="#backPushed" layoutY="357.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="101.0" text="Zurück"/>
         <Button layoutX="385.0" layoutY="357.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="200.0" text="Presentation erstellen"/>
     </children>
 </AnchorPane>

@@ -19,17 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5848637c-9d90-48df-a809-56bef999bade" name="Default Changelist" comment="reserveSeats">
+    <list default="true" id="5848637c-9d90-48df-a809-56bef999bade" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ch/vino/cinema/createMovie/CreateMovieController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch/vino/cinema/createMovie/createMovie.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch/vino/cinema/createRoom/CreateRoomController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ch/vino/cinema/createRoom/createRoom.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Cinema-Project-M226.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Cinema-Project-M226.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Cinema-Project-M226/ch/vino/cinema/code/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cinema-Project-M226/ch/vino/cinema/code/Room.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/Home/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/Home/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/Home/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/Home/home.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/code/Cinema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/code/Cinema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/code/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/code/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/code/Presentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/code/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/code/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/code/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/prefaps/FilmsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/prefaps/films/FilmsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/prefaps/films.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/prefaps/films/films.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/showFilm/ShowFilmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/showFilm/ShowFilmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ch/vino/cinema/showFilm/showFilm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ch/vino/cinema/showFilm/showFilm.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +82,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
+    <property name="last_opened_file_path" value="$FXML_PATH$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -87,9 +90,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -100,7 +104,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ch.vino.cinema.Main" />
       <module name="Cinema-Project-M226" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;${PATH_TO_FX}&quot; --add-modules=javafx.controls,javafx.fxml,javafx.graphics" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;${FXML_PATH}&quot; --add-modules=javafx.controls,javafx.fxml,javafx.graphics" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ch.vino.cinema.*" />
@@ -112,7 +116,8 @@
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="VM_PARAMETERS" value="--module-path &quot;${PATH_TO_FX}&quot; --add-modules=javafx.controls,javafx.fxml,javafx.graphics" />
+      <option name="MAIN_CLASS_NAME" value="ch.vino.cinema.Main" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;${FXML_PATH}&quot; --add-modules=javafx.controls,javafx.fxml,javafx.graphics" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,7 +128,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -139,6 +144,8 @@
       <workItem from="1602499073648" duration="3206000" />
       <workItem from="1602508595329" duration="609000" />
       <workItem from="1602576080926" duration="10515000" />
+      <workItem from="1603699238403" duration="10804000" />
+      <workItem from="1603989914043" duration="1682000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1601282586423</created>
@@ -165,19 +172,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
@@ -189,20 +197,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1601282914297" />
-    <state x="440" y="94" key="#Project_Structure" timestamp="1602576753585">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="352" y="74" key="#Project_Structure" timestamp="1603704044070">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="352" y="74" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1603704044070" />
     <state x="440" y="94" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602576753585" />
-    <state x="279" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602576763842">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603704185222">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1601285367742" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603704185222" />
     <state x="279" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602576763842" />
     <state x="718" y="143" key="#com.intellij.ide.util.MemberChooser" timestamp="1602590209312">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1601284422909" />
     <state x="718" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602590209312" />
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603703861321">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="196" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1603703861321" />
     <state x="400" y="101" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1601283584350">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -215,25 +228,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="342" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1601285472660" />
-    <state x="666" y="261" key="FileChooserDialogImpl" timestamp="1601544757014">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="533" y="207" key="FileChooserDialogImpl" timestamp="1603704151746">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="533" y="207" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603704151746" />
     <state x="666" y="261" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601544757014" />
-    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1602597373178">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="197" key="GridCell.Tab.0.bottom" timestamp="1603991599854">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="197" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603991599854" />
     <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373178" />
-    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1602597373177">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="197" key="GridCell.Tab.0.center" timestamp="1603991599854">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="197" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603991599854" />
     <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373177" />
-    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1602597373177">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="197" key="GridCell.Tab.0.left" timestamp="1603991599854">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="197" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603991599854" />
     <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373177" />
-    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1602597373177">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="197" key="GridCell.Tab.0.right" timestamp="1603991599854">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="197" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603991599854" />
     <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373177" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1602597373178">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -251,39 +269,31 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602597373178" />
-    <state x="311" y="0" key="SettingsEditor" timestamp="1601544799266">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1603706988015">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1601282199278" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603706988015" />
     <state x="311" y="0" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601544799266" />
     <state x="451" y="169" key="Vcs.Push.Dialog.v2" timestamp="1601550489770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="361" y="134" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601283072005" />
     <state x="451" y="169" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1601550489770" />
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601283081111">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1603989915399">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1601283081111" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603989915399" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603705991834">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1603705991834" />
+    <state x="475" y="41" key="refactoring.ChangeSignatureDialog" timestamp="1603708761614">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="475" y="41" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1603708761614" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1602501521966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040/-3840.16.1536.824@0.0.1920.1040" timestamp="1602501521966" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ch/vino/cinema/code/Presentation.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ch/vino/cinema/code/Presentation.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
