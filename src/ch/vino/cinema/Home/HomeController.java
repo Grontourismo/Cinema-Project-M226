@@ -3,9 +3,9 @@ package ch.vino.cinema.Home;
 import ch.vino.cinema.Main;
 import ch.vino.cinema.code.Movie;
 import ch.vino.cinema.prefaps.films.FilmsController;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 
 import java.io.IOException;
@@ -13,15 +13,14 @@ import java.io.IOException;
 public class HomeController {
     public static HomeController instance;
     public VBox vbox;
-    public Button createRoom;
 
-    public HomeController() {
+    public HomeController(){
         instance = this;
     }
 
     public void init() {
         vbox.getChildren().clear();
-        for (Movie movie : Main.getCinema().getMovies()) {
+        for(Movie movie : Main.getCinema().getMovies()){
             try {
                 FXMLLoader loader = new FXMLLoader(FilmsController.class.getResource("films.fxml"));
                 Parent root = loader.load();
@@ -34,11 +33,15 @@ public class HomeController {
         }
     }
 
-    public void createRoomPushed() throws IOException {
-        Main.getInstance().createRoom();
+    public void addRoom() throws IOException {
+        Main.getInstance().showAddRoom();
     }
 
-    public void createMoviePushed() throws IOException {
-        Main.getInstance().createMovie();
+    public void deleteRoom() throws IOException {
+        Main.getInstance().showDeleteRoom();
+    }
+
+    public void addFilm() throws IOException {
+        Main.getInstance().showAddFilm();
     }
 }

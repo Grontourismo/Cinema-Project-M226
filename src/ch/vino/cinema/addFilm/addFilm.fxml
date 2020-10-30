@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="234.0" prefWidth="176.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.vino.cinema.addFilm.AddFilmController">
+   <children>
+      <TextField fx:id="name" layoutX="14.0" layoutY="14.0" text="Name" />
+      <TextField fx:id="fsk" layoutX="14.0" layoutY="50.0" text="FSK" />
+      <TextField fx:id="price" layoutX="14.0" layoutY="85.0" text="Price" />
+      <TextField fx:id="genre" layoutX="14.0" layoutY="122.0" text="Genre" />
+      <TextField fx:id="lenght" layoutX="14.0" layoutY="159.0" text="Lenght" />
+      <Button onAction="#submit" layoutX="111.0" layoutY="200.0" mnemonicParsing="false" text="Submit" />
+      <Label fx:id="label" layoutX="14.0" layoutY="192.0" prefHeight="18.0" prefWidth="89.0" text="Label" />
+   </children>
+</AnchorPane>
