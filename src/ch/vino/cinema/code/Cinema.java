@@ -17,10 +17,21 @@ public class Cinema {
     private ArrayList<Presentation> presentations = new ArrayList<>();
     private ArrayList<Movie> movies = new ArrayList<>();
 
+
+    /**
+     * Initialize a new Room
+     * @param name Name of Room
+     * @param rows The count of rows
+     * @param seatsPerRow The count of seats per row
+     */
     public void newRoom(String name, int rows, int seatsPerRow){
         rooms.add(new Room(name, rows, seatsPerRow, rooms.size()));
     }
 
+    /**
+     * Deletes a room
+     * @param room Room which should be removed
+     */
     public void removeRoom(Room room){
         for (Presentation presentation : getPresentationsWithRoom(room)){
             this.presentations.remove(presentation);
@@ -28,10 +39,21 @@ public class Cinema {
         this.rooms.remove(room);
     }
 
+    /**
+     * Initializes a new Presentation
+     * @param movie Movie from presentation
+     * @param date Date which the presentation should be playing
+     * @param time Time which the presentation should be playing
+     * @param room Room from presentation
+     */
     public void newPresentation(Movie movie, String date, String time, Room room){
         presentations.add(new Presentation(movie, date, time, room));
     }
 
+    /**
+     * Deletes a Presentation
+     * @param presentation Presentation which should be removed
+     */
     public void removePresentation(Presentation presentation){
         this.presentations.remove(presentation);
     }
@@ -52,10 +74,22 @@ public class Cinema {
     }
     */
 
+    /**
+     * Initializes a new Movie
+     * @param name Name of movie
+     * @param fsk Fsk of Movie
+     * @param price Price from movie
+     * @param genre Genre from movie
+     * @param length Playing length from Movie
+     */
     public void newMovie(String name, int fsk, double price, String genre, int length){
         movies.add(new Movie(name, fsk, price, genre, length, movies.size()));
     }
 
+    /**
+     * Deletes a movie
+     * @param movie Movie which should be removed
+     */
     public void removeMovie(Movie movie){
         for (Presentation presentation : getPresentationsFromMovie(movie)){
             this.presentations.remove(presentation);
@@ -63,6 +97,11 @@ public class Cinema {
         this.movies.remove(movie);
     }
 
+    /**
+     * Gets all presentations from a Movie
+     * @param movie Movie in which the presentations should be searched
+     * @return ArrayList with all presentations from a movie
+     */
     public ArrayList<Presentation> getPresentationsFromMovie(Movie movie){
         ArrayList<Presentation> presentations = new ArrayList<>();
         for (Presentation presentation : this.presentations){
@@ -73,6 +112,11 @@ public class Cinema {
         return presentations;
     }
 
+    /**
+     * Gets all Presentations which have a room
+     * @param room Room in which the presentations should be searched
+     * @return Arraylist with all the presentations from a room
+     */
     public ArrayList<Presentation> getPresentationsWithRoom(Room room){
         ArrayList<Presentation> presentations = new ArrayList<>();
         for (Presentation presentation : this.presentations){
@@ -83,6 +127,11 @@ public class Cinema {
         return presentations;
     }
 
+    /**
+     * Calls method in Presentation which makes a new reservation
+     * @param seatIdx
+     * @param presentation
+     */
     public void addReservation(HashSet<Integer> seatIdx, Presentation presentation){
         int nr = 0;
         for (Presentation presentation1 : this.presentations){
@@ -93,18 +142,34 @@ public class Cinema {
         }
     }
 
+    /**
+     * gets all rooms
+     * @return arraylist with rooms
+     */
     public ArrayList<Room> getRooms() {
         return rooms;
     }
 
+    /**
+     * gets all Presentations
+     * @return arraylist with presentations
+     */
     public ArrayList<Presentation> getPresentations() {
         return presentations;
     }
 
+    /**
+     * gets all movies
+     * @return Arraylist with movies
+     */
     public ArrayList<Movie> getMovies() {
         return movies;
     }
 
+    /**
+     * makes a Room jsonArray
+     * @return JSONArray
+     */
     public JSONArray toJsonRoom() {
         JSONArray roomArray = new JSONArray();
 
@@ -120,6 +185,10 @@ public class Cinema {
         return roomArray;
     }
 
+    /**
+     * makes a Movie jsonArray
+     * @return JsonArray
+     */
     public JSONArray toJsonMovie() {
         JSONArray filmArray = new JSONArray();
 
@@ -136,6 +205,10 @@ public class Cinema {
         return filmArray;
     }
 
+    /**
+     * makes a Presentation jsonArray
+     * @return JSonArray
+     */
     public JSONArray toJsonPresentation() {
         JSONArray presentationArray = new JSONArray();
 
@@ -153,6 +226,12 @@ public class Cinema {
         return presentationArray;
     }
 
+    /**
+     * saves all JsonArray in a Json-file
+     * @param roomArray Jsonarray with Room object
+     * @param movieArray JsonArray with movie object
+     * @param presentationArray JsonArray with presentation object
+     */
     public void save(JSONArray roomArray, JSONArray movieArray, JSONArray presentationArray) {
         try (FileWriter file = new FileWriter("src/ch/vino/cinema/data/rooms.json")) {
             file.write(roomArray.toJSONString());
@@ -176,6 +255,12 @@ public class Cinema {
         }
     }
 
+    /**
+     * gets all objects from all JSONArrays
+     * @param rooms JsonArray with Room object
+     * @param movies JsonArray with movie object
+     * @param presentations JsonArray with presentation object
+     */
     public void fromJSON(JSONArray rooms, JSONArray movies, JSONArray presentations) {
         ArrayList<Room> room = new ArrayList<>();
         for (Object jsonRoom : rooms) {
