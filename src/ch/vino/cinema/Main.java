@@ -28,8 +28,14 @@ public class Main extends Application {
     private static Cinema cinema = new Cinema();
     private static Stage primaryStage;
 
+    /**
+     * start method to load everything
+     *
+     * @param primaryStage stage which will be shown
+     * @throws Exception Exception that will be thrown on ERROR
+     */
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
         load();
         Main.primaryStage = primaryStage;
         showHome();
@@ -38,6 +44,9 @@ public class Main extends Application {
         });
     }
 
+    /**
+     * load jsons into JSONArrays
+     */
     public void load() {
         try {
             JSONParser parser = new JSONParser();
@@ -51,7 +60,6 @@ public class Main extends Application {
             FileReader readerPresentation = new FileReader("src/ch/vino/cinema/data/presentations.json");
             JSONArray presentations = (JSONArray) parser.parse(readerPresentation);
 
-
             cinema.fromJSON(rooms, films, presentations);
         } catch (IOException e) {
             System.out.println("I/O Error");
@@ -60,7 +68,11 @@ public class Main extends Application {
         }
     }
 
-
+    /**
+     * show Home Window
+     *
+     * @throws IOException Exception on ERROR
+     */
     public void showHome() throws IOException {
         FXMLLoader loader = new FXMLLoader(HomeController.class.getResource("home.fxml"));
         Parent root = loader.load();
@@ -71,6 +83,12 @@ public class Main extends Application {
         Main.primaryStage.show();
     }
 
+    /**
+     * show Film Window
+     *
+     * @param movie Movie which will be shown
+     * @throws IOException Exception on ERROR
+     */
     public void showFilm(Movie movie) throws IOException {
         FXMLLoader loader = new FXMLLoader(ShowFilmController.class.getResource("showFilm.fxml"));
         Parent root = loader.load();
@@ -81,6 +99,13 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    /**
+     * show Presentation Window
+     *
+     * @param presentation presentation that will be shown
+     * @param movie        movie in the presentation
+     * @throws IOException Exception on ERROR
+     */
     public void showPresentation(Presentation presentation, Movie movie) throws IOException {
         FXMLLoader loader = new FXMLLoader(ReserveController.class.getResource("reserve.fxml"));
         Parent root = loader.load();
@@ -91,6 +116,11 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    /**
+     * show Add Presentation Window
+     *
+     * @throws IOException Exception on ERROR
+     */
     public void showAddPresentation() throws IOException {
         FXMLLoader loader = new FXMLLoader(AddPresentationController.class.getResource("addPresentation.fxml"));
         Parent root = loader.load();
@@ -102,6 +132,11 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    /**
+     * show add Room Window
+     *
+     * @throws IOException Exception on ERROR
+     */
     public void showAddRoom() throws IOException {
         FXMLLoader loader = new FXMLLoader(AddRoomController.class.getResource("addRoom.fxml"));
         Parent root = loader.load();
@@ -113,6 +148,11 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    /**
+     * show delete room window
+     *
+     * @throws IOException exception on ERROR
+     */
     public void showDeleteRoom() throws IOException {
         FXMLLoader loader = new FXMLLoader(DeleteRoomController.class.getResource("deleteRoom.fxml"));
         Parent root = loader.load();
@@ -124,6 +164,11 @@ public class Main extends Application {
         primaryStage.show();
     }
 
+    /**
+     * show add film Window
+     *
+     * @throws IOException Exception on ERROR
+     */
     public void showAddFilm() throws IOException {
         FXMLLoader loader = new FXMLLoader(AddFilmController.class.getResource("addFilm.fxml"));
         Parent root = loader.load();
@@ -135,20 +180,30 @@ public class Main extends Application {
         primaryStage.show();
     }
 
-
+    /**
+     * get this cinema
+     *
+     * @return this cinema
+     */
     public static Cinema getCinema() {
         return cinema;
     }
 
-    public static Stage getPrimaryStage() {
-        return primaryStage;
-    }
-
+    /**
+     * main method on start from application
+     *
+     * @param args arguments
+     */
     public static void main(String[] args) {
         launch(args);
     }
 
-    public static Main getInstance(){
+    /**
+     * get instance to load new window
+     *
+     * @return this instance
+     */
+    public static Main getInstance() {
         return instance;
     }
 }

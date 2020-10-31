@@ -28,6 +28,11 @@ public class PresentationsController {
     private Presentation presentation;
     private Movie movie;
 
+    /**
+     * start method create prefab
+     * @param presentation presentation
+     * @param movie movie
+     */
     public void init(Presentation presentation, Movie movie){
         pane.setStyle("-fx-border-color: black");
         this.presentation = presentation;
@@ -37,10 +42,18 @@ public class PresentationsController {
         this.freePlaces.setText(presentation.getFreePlaces() + "");
     }
 
+    /**
+     * reserve
+     * @throws IOException exception on error
+     */
     public void reserve() throws IOException {
         Main.getInstance().showPresentation(presentation, movie);
     }
 
+    /**
+     * delete
+     * @throws IOException exception on error
+     */
     public void delete() throws IOException {
         Main.getCinema().removePresentation(presentation);
         ShowFilmController.instance.init(movie);

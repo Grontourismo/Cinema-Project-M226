@@ -27,6 +27,10 @@ public class FilmsController {
     public Button delete;
     public boolean isChoosen;
 
+    /**
+     * start method create prefab
+     * @param movie movie
+     */
     public void init(Movie movie){
         pane.setStyle("-fx-border-color: black");
         this.label.setText(movie.getName());
@@ -34,10 +38,18 @@ public class FilmsController {
         this.movie = movie;
     }
 
+    /**
+     * show movie on click
+     * @throws IOException exception on error
+     */
     public void showPushed() throws IOException {
         Main.getInstance().showFilm(movie);
     }
 
+    /**
+     * delete when clicked
+     * @throws IOException exception on error
+     */
     public void deletePushed() throws IOException {
         FXMLLoader loader = new FXMLLoader(ConfirmController.class.getResource("confirm.fxml"));
         Parent root = loader.load();
@@ -48,6 +60,9 @@ public class FilmsController {
         primaryStage.show();
     }
 
+    /**
+     * choose film
+     */
     public void choose() {
         if (isChoosen){
             isChoosen = false;

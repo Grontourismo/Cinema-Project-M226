@@ -16,10 +16,16 @@ public class DeleteRoomController {
     public VBox vbox;
     public static DeleteRoomController instance;
 
+    /**
+     * constructor
+     */
     public DeleteRoomController(){
         instance = this;
     }
 
+    /**
+     * load rooms
+     */
     public void init(){
         vbox.getChildren().clear();
         for(Room room : Main.getCinema().getRooms()){

@@ -3,9 +3,7 @@ package ch.vino.cinema.reserve;
 import ch.vino.cinema.Main;
 import ch.vino.cinema.code.Movie;
 import ch.vino.cinema.code.Presentation;
-import ch.vino.cinema.prefaps.presentations.PresentationsController;
 import ch.vino.cinema.prefaps.reserve.SeatController;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.layout.HBox;
@@ -21,14 +19,20 @@ public class ReserveController {
     public ArrayList<SeatController> controllers = new ArrayList<>();
     public Movie movie;
 
-    public void init(Presentation presentation, Movie movie){
+    /**
+     * start method show places
+     *
+     * @param presentation presentation to reserve
+     * @param movie        movie to reserve
+     */
+    public void init(Presentation presentation, Movie movie) {
         this.movie = movie;
         this.presentation = presentation;
         ArrayList<String> seats = presentation.getSeats();
         int seatsPerRow = presentation.getRoom().getSeatsPerRow();
         int nr = 0;
         HBox hbox = new HBox();
-        for (String seat : seats){
+        for (String seat : seats) {
             if (nr % seatsPerRow == 0) {
                 hbox = new HBox();
                 vbox.getChildren().add(hbox);
@@ -47,11 +51,16 @@ public class ReserveController {
         }
     }
 
+    /**
+     * reserve selected places
+     *
+     * @throws IOException exception on ERROR
+     */
     public void reserve() throws IOException {
         HashSet<Integer> seatIdx = new HashSet<>();
         int nr = 0;
-        for (SeatController controller : controllers){
-            if (controller.isSelected()){
+        for (SeatController controller : controllers) {
+            if (controller.isSelected()) {
                 seatIdx.add(nr);
             }
             nr++;
@@ -60,6 +69,11 @@ public class ReserveController {
         Main.getInstance().showFilm(movie);
     }
 
+    /**
+     * go back to main menu on click
+     *
+     * @throws IOException exception on ERROR
+     */
     public void back() throws IOException {
         Main.getInstance().showFilm(movie);
     }

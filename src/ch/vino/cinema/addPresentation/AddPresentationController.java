@@ -6,7 +6,6 @@ import ch.vino.cinema.code.Movie;
 import ch.vino.cinema.code.Room;
 import ch.vino.cinema.prefaps.films.FilmsController;
 import ch.vino.cinema.prefaps.rooms.RoomController;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.DatePicker;
@@ -27,14 +26,21 @@ public class AddPresentationController {
     public DatePicker datepicker;
     public Stage primaryStage;
 
-    public AddPresentationController(){
+    /**
+     * constructor
+     */
+    public AddPresentationController() {
         instance = this;
     }
 
+    /**
+     * start method load movies and rooms
+     * @param primaryStage stage
+     */
     public void init(Stage primaryStage) {
         this.primaryStage = primaryStage;
         vbox.getChildren().clear();
-        for(Movie movie : Main.getCinema().getMovies()){
+        for (Movie movie : Main.getCinema().getMovies()) {
             try {
                 FXMLLoader loader = new FXMLLoader(FilmsController.class.getResource("films2.fxml"));
                 Parent root = loader.load();
@@ -47,7 +53,7 @@ public class AddPresentationController {
             }
         }
         vboxRoom.getChildren().clear();
-        for(Room room : Main.getCinema().getRooms()){
+        for (Room room : Main.getCinema().getRooms()) {
             try {
                 FXMLLoader loader = new FXMLLoader(RoomController.class.getResource("room.fxml"));
                 Parent root = loader.load();
@@ -61,23 +67,30 @@ public class AddPresentationController {
         }
     }
 
+    /**
+     * create new presentation
+     */
     public void submit() {
         Movie movie = null;
         Room room = null;
-        for (FilmsController controll : movieControllers){
-            if (controll.isChoosen){
+        for (FilmsController controll : movieControllers) {
+            if (controll.isChoosen) {
                 movie = controll.movie;
             }
         }
-        for (RoomController controll : roomControllers){
-            if (controll.isChoosen){
+        for (RoomController controll : roomControllers) {
+            if (controll.isChoosen) {
                 room = controll.room;
             }
         }
-        String date = this.datepicker.getValue().toString();
-        String time = this.time.getText();
-        Main.getCinema().newPresentation(movie, date, time, room);
-        HomeController.instance.init();
-        this.primaryStage.close();
+        try {
+            String date = this.datepicker.getValue().toString();
+            String time = this.time.getText();
+            Main.getCinema().newPresentation(movie, date, time, room);
+            HomeController.instance.init();
+            this.primaryStage.close();
+        } catch (NullPointerException e) {
+            System.out.println("Invalid choose");
+        }
     }
 }

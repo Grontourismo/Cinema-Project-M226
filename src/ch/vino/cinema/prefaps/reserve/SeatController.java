@@ -2,7 +2,6 @@ package ch.vino.cinema.prefaps.reserve;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 public class SeatController {
@@ -13,15 +12,23 @@ public class SeatController {
     private String seatNr;
     private boolean isSelected;
 
-    public void init(String seatNr){
+    /**
+     * start method create seat prefab
+     *
+     * @param seatNr
+     */
+    public void init(String seatNr) {
         pane.setStyle("-fx-border-color: black");
         this.seatNr = seatNr;
-        if (seatNr.equals("XX")){
+        if (seatNr.equals("XX")) {
             this.pane.setStyle("-fx-background-color: #de3a1d; -fx-border-color: black");
         }
         this.label.setText(seatNr);
     }
 
+    /**
+     * make background green on clicked
+     */
     public void clicked() {
         if (!seatNr.equals("XX")) {
             this.pane.setStyle("-fx-background-color: #4ced24; -fx-border-color: black");
@@ -29,6 +36,11 @@ public class SeatController {
         }
     }
 
+    /**
+     * look if selected
+     *
+     * @return is selected value
+     */
     public boolean isSelected() {
         return isSelected;
     }
